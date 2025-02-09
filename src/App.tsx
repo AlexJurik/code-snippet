@@ -30,7 +30,7 @@ function App() {
   const [borderRadius, setBorderRadius] = useState(8);
   const [windowControls, setWindowControls] = useState(true);
   const [prettifyDisabled, setPrettifyDisabled] = useState(
-    language === LANGUAGES.javascript
+    language !== LANGUAGES.javascript
   );
   const [imageFormat, setImageFormat] = useState<"png" | "jpeg">("png");
   const previewRef = useRef<HTMLDivElement>(null);
@@ -134,12 +134,9 @@ function App() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-8 flex-grow">
-        <div className="flex flex-col lg:flex-row gap-8 h-[calc(100vh-24rem)] min-h-[600px]">
-          <section
-            className="flex-1 flex flex-col h-[calc(33vh-6rem)] lg:h-full"
-            aria-label="Code Editor"
-          >
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <section className="flex-1 flex flex-col" aria-label="Code Editor">
             <div
               className={`rounded-lg ${currentTheme.bg} p-4 shadow-xl border ${currentTheme.accent} h-full flex flex-col`}
             >
@@ -176,7 +173,7 @@ function App() {
                 </div>
               </header>
               <div
-                className={`border ${currentTheme.accent} rounded-lg flex-grow`}
+                className={`border ${currentTheme.accent} rounded-lg`}
                 role="textbox"
                 aria-label="Code input area"
               >
@@ -202,11 +199,11 @@ function App() {
           </section>
 
           <section
-            className="w-full lg:w-80 h-auto lg:h-full"
+            className="w-full lg:w-80"
             aria-label="Customization Options"
           >
             <div
-              className={`rounded-lg ${currentTheme.bg} p-4 shadow-xl border ${currentTheme.accent} h-full flex flex-col`}
+              className={`rounded-lg ${currentTheme.bg} p-4 shadow-xl border ${currentTheme.accent} flex flex-col`}
             >
               <header className="mb-4">
                 <h2 className={`text-xl font-bold ${currentTheme.text}`}>
@@ -354,10 +351,7 @@ function App() {
             </div>
           </section>
 
-          <section
-            className="flex-1 flex flex-col h-[calc(33vh-6rem)] lg:h-full"
-            aria-label="Code Preview"
-          >
+          <section className="flex-1 flex flex-col" aria-label="Code Preview">
             <div
               className={`rounded-lg ${currentTheme.bg} p-4 shadow-xl border ${currentTheme.accent} h-full flex flex-col`}
             >
@@ -465,7 +459,7 @@ function App() {
         </div>
       </div>
 
-      <footer className={`border-t ${currentTheme.accent} py-4 mt-8`}>
+      <footer className={`border-t ${currentTheme.accent} py-4 mt-auto`}>
         <div className="container mx-auto px-4 flex justify-center gap-4">
           <a
             href="https://github.com/yourusername/your-repo"
