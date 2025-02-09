@@ -30,7 +30,7 @@ Transform your code into beautiful, shareable images perfect for tutorials, docu
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/code-snippet-generator.git
+git clone https://github.com/AlexJurik/code-snippet.git
 cd code-snippet-generator
 ```
 
