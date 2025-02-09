@@ -462,7 +462,7 @@ function App() {
       <footer className={`border-t ${currentTheme.accent} py-4 mt-auto`}>
         <div className="container mx-auto px-4 flex justify-center gap-4">
           <a
-            href="https://github.com/yourusername/your-repo"
+            href="https://github.com/AlexJurik/code-snippet"
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center gap-2 ${currentTheme.text} hover:opacity-80 transition-opacity`}

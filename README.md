@@ -109,4 +109,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@Alex Jurik](https://bento.me/alex-jurik)
+[@Alex Jurik](https://bento.me/alex-jurik)
